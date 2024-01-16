@@ -1,6 +1,6 @@
 resource "aws_route53_record" "www" {
   zone_id = var.hosted_zone_id
-  name    = "www.${var.domain}"
+  name    = var.domain
   type    = "A"
 
   alias {

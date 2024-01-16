@@ -88,7 +88,7 @@ resource "aws_lb_target_group_attachment" "alb" {
 
 
 resource "aws_acm_certificate" "acm_certificate" {
-  domain_name       = var.host_header
+  domain_name       = var.domain
   validation_method = "DNS"
 
   lifecycle {
