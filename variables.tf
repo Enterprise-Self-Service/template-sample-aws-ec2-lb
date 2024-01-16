@@ -54,7 +54,3 @@ variable "domain" {
   description = "What domain will point to the load balamncer. Note DNS entry will be created"
   type = string
 }
-
-variable "host_header" {
-  type = string
-}
