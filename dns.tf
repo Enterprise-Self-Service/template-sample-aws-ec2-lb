@@ -1,4 +1,8 @@
-resource "aws_route53_record" "www" {
+resource "aws_route53_zone" "main" {
+  name = var.domain
+}
+
+resource "aws_route53_record" "A" {
   zone_id = var.hosted_zone_id
   name    = var.domain
   type    = "A"

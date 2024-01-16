@@ -1,5 +1,5 @@
 resource "aws_route53_record" "validation" {
-  zone_id = var.hosted_zone_id
+  zone_id = aws_route53_zone.main.zone_id
   for_each = {
     for dvo in aws_acm_certificate.default.domain_validation_options : dvo.domain_name => {
       name   = dvo.resource_record_name
