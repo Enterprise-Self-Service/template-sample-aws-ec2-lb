@@ -51,6 +51,6 @@ variable "hosted_zone_id" {
 }
 
 variable "domain" {
-  description = "What domain will point to the load balamncer. Note DNS entry will be created"
+  description = "What domain will point to the load balancer. Note DNS entry will be created"
   type = string
 }
