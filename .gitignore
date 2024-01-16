@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+*.swp
+.env
+.terraform.lock.hcl
+.terraform
+vars.tfvars
