@@ -4,7 +4,7 @@ resource "aws_route53_zone" "main" {
 
 resource "aws_route53_record" "A" {
   zone_id = aws_route53_zone.main.zone_id
-  name    = var.domain
+  name    = "www.${var.domain}"
   type    = "A"
 
   alias {
